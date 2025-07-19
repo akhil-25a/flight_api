@@ -1,0 +1,105 @@
+[
+  {
+    "model": "flights.airline",
+    "pk": 1,
+    "fields": {
+      "name": "IndiGo",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/8/87/IndiGo_Logo.svg"
+    }
+  },
+  {
+    "model": "flights.airline",
+    "pk": 2,
+    "fields": {
+      "name": "Air India",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Air_India_Logo.svg"
+    }
+  },
+  {
+    "model": "flights.airline",
+    "pk": 3,
+    "fields": {
+      "name": "SpiceJet",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/2/21/SpiceJet_logo.svg"
+    }
+  },
+  {
+    "model": "flights.aircraft",
+    "pk": 1,
+    "fields": {
+      "model": "Airbus A320"
+    }
+  },
+  {
+    "model": "flights.aircraft",
+    "pk": 2,
+    "fields": {
+      "model": "Boeing 737"
+    }
+  },
+  {
+    "model": "flights.flight",
+    "pk": 1,
+    "fields": {
+      "from_location": "Delhi",
+      "to_location": "Mumbai",
+      "departure_time": "2025-08-03T06:30:00Z",
+      "arrival_time": "2025-08-03T08:50:00Z",
+      "price": "4200.00",
+      "stops": 0,
+      "wifi_available": true,
+      "inflight_meal": true,
+      "airline": 1,
+      "aircraft": 1
+    }
+  },
+  {
+    "model": "flights.flight",
+    "pk": 2,
+    "fields": {
+      "from_location": "Chandigarh",
+      "to_location": "Bangalore",
+      "departure_time": "2025-08-03T21:00:00Z",
+      "arrival_time": "2025-08-04T01:00:00Z",
+      "price": "5400.00",
+      "stops": 1,
+      "wifi_available": false,
+      "inflight_meal": true,
+      "airline": 2,
+      "aircraft": 2
+    }
+  },
+  {
+    "model": "flights.flight",
+    "pk": 3,
+    "fields": {
+      "from_location": "Delhi",
+      "to_location": "Goa",
+      "departure_time": "2025-08-03T14:00:00Z",
+      "arrival_time": "2025-08-03T16:30:00Z",
+      "price": "3800.00",
+      "stops": 0,
+      "wifi_available": true,
+      "inflight_meal": false,
+      "airline": 3,
+      "aircraft": 1
+    }
+  },
+  {
+    "model": "flights.flight",
+    "pk": 4,
+    "fields": {
+      "from_location": "Mumbai",
+      "to_location": "Kolkata",
+      "departure_time": "2025-08-04T05:00:00Z",
+      "arrival_time": "2025-08-04T08:45:00Z",
+      "price": "6000.00",
+      "stops": 2,
+      "wifi_available": false,
+      "inflight_meal": false,
+      "airline": 1,
+      "aircraft": 2
+    }
+  }
+]
+// python manage.py loaddata flights_fixture.json
