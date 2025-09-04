@@ -18,7 +18,7 @@ This project allows searching flights with multiple filters using **dummy flight
 
 All flight data is **manually input** for testing purposes.
 
-api//
-http://127.0.0.1:8000/api/flights/search/?from=Delhi&to=mumbai&stops=0&wifi=false
+api
+//http://127.0.0.1:8000/api/flights/search/?from=Delhi&to=mumbai&stops=0&wifi=false
 
-http://127.0.0.1:8000/api/flights/search/
+//http://127.0.0.1:8000/api/flights/search/
